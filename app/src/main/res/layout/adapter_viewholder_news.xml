@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context="android.elderlycommunity.ywca.com.elderlycommunity.MainActivity.NewsDetailActivity">
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:padding="8dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="3dp">
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="------"
+            android:textColor="@color/mainBlue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/newsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newsTitle"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingBottom="8dp"
+            android:paddingTop="2dp"
+            android:text="---"
+            android:textColor="#292929"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/readImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/newsContent"
+            android:src="@drawable/ic_unread" />
+
+        <TextView
+            android:id="@+id/readRecord"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:layout_below="@+id/newsContent"
+            android:layout_toRightOf="@id/readImageView"
+            android:textSize="16sp"
+            android:textColor="#FFA3A3A3"
+            android:text="unread" />
+
+        <TextView
+            android:id="@+id/postedTime"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:layout_below="@+id/newsContent"
+            android:layout_alignEnd="@id/newsContent"
+            android:textSize="16sp"
+            android:textColor="#FFA3A3A3"
+            android:text="---" />
+    </RelativeLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

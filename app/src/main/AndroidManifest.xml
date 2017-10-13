@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.elderlycommunity.ywca.com.elderlycommunity">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_bell_notify" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity.MainActivity"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ClassListActivity.ClassListActivity"
+            android:label="Chats" />
+        <activity
+            android:name=".ChatActivity.ClassChatActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ProfileActivity.ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".ClassListActivity.ClassListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClassListActivity.ClassListActivity" />
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="My Calendar"
+            android:parentActivityName=".ProfileActivity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProfileActivity.ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".LoginGuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".SupportActivity" />
+        <activity android:name=".AlbumActivity.AlbumActivity" />
+        <activity android:name=".PhotoSlideActivity.PhotoSlideActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity
+            android:name=".SelectAlbum.ShopActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CenterInfoActivity" />
+        <activity android:name=".MainActivity.NewsDetailActivity" />
+        <activity
+            android:name=".MainActivity.NoticeHistoryActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity.MainActivity" />
+        </activity>
+        <activity android:name=".AttendClassActivity"></activity>
+    </application>
+
+</manifest>

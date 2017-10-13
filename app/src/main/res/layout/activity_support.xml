@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.SupportActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:background="@color/mainBlue"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:text="查詢" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="歡迎向本中心提出任何意見 :)"
+                android:textColor="@color/mainBlue"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/feedback"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_weight="1"
+                android:allowUndo="true"
+                android:gravity="top"
+                android:hint="在此輸入內容!"
+                android:inputType="textMultiLine"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+            <info.hoang8f.widget.FButton
+                android:textAllCaps="false"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sendFeedback"
+                android:text="送出內容"
+                android:textColor="#ffffff"
+                fbutton:buttonColor="#ffd19d"
+                fbutton:cornerRadius="5dp"
+                fbutton:shadowColor="#edc08d"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="toCenterInfoActivity"
+                android:text="社區中心資料"
+                android:textColor="#ffffff"
+                fbutton:buttonColor="#318db4"
+                fbutton:cornerRadius="5dp"
+                fbutton:shadowColor="#32718c"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toMainActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toSharingActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/sharing" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toProfileActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/support_orange" />
+    </LinearLayout>
+</LinearLayout>

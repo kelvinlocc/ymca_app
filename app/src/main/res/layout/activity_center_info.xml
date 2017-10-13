@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.CenterInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/mainBlue">
+        <ImageView
+            android:id="@+id/home"
+            style="@style/ClickableImageView"
+            android:onClick="finishClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_margin="8dp"
+            android:padding="2dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="社區中心資料"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="中心名稱: 明儒松柏社區服務中心\n中心地址: 西灣河 鯉景道56號\n                 康東邨 康瑞樓地下\n電話: 2676 7067 傳真: 2967 1626\n中心電郵: memy@ywca.org.hk\n中心網址: http://memy.ywca.org.hk"
+        android:textColor="@color/mainBlue"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/mapImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/map"/>
+</LinearLayout>

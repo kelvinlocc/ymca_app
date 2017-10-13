@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#318db4</color>
+    <color name="colorPrimaryDark">#318db4</color>
+    <color name="colorAccent">#318db4</color>
+
+    <color name="mainBlue">#318db4</color>
+    <color name="mainBlueDark">#32718c</color>
+
+    <color name="fontBlack">#4b4b4b</color>
+
+    <color name="selectedBlue">#9388e7ff</color>
+    <color name="transparentBlue">#77318db4</color>
+    <color name="white">#ffffff</color>
+
+    <color name="shopAccent">#84ceca</color>
+    <color name="shopSecondary">#727272</color>
+    <color name="shopRatedStar">#ffeb5a</color>
+    <color name="shopFabRipple">#51b2ac</color>
+</resources>

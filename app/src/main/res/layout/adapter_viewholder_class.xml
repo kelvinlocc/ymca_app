@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outerContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/courseIcon"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/courseName"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainBlue"
+                android:textSize="22sp"
+                android:text="Course Name"/>
+
+            <RelativeLayout
+                android:id="@+id/chatContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/topUserIcon"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/topUserName"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontBlack"
+                    android:textSize="14sp"
+                    android:text="User Name"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/topUserIcon" />
+
+                <TextView
+                    android:id="@+id/topUserReplyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a3a3a3"
+                    android:layout_alignBottom="@+id/topUserName"
+                    android:layout_alignParentEnd="true"
+                    android:text="1h" />
+
+                <TextView
+                    android:id="@+id/topUserMsg"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:textColor="@color/fontBlack"
+                    android:layout_alignStart="@+id/topUserName"
+                    android:layout_below="@+id/topUserName"
+                    android:text="msg.\nsegweg\negewgewhewrhr" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6e6"
+                    android:layout_below="@+id/topUserMsg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chatContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/midUserIcon"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/midUserName"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontBlack"
+                    android:textSize="14sp"
+                    android:text="User Name"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/midUserIcon" />
+
+                <TextView
+                    android:id="@+id/midUserReplyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a3a3a3"
+                    android:layout_alignBottom="@+id/midUserName"
+                    android:layout_alignParentEnd="true"
+                    android:text="1h" />
+
+                <TextView
+                    android:id="@+id/midUserMsg"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:textColor="@color/fontBlack"
+                    android:layout_alignStart="@+id/midUserName"
+                    android:layout_below="@+id/midUserName"
+                    android:text="msg.\nsegweg\negewgewhewrhr" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6e6"
+                    android:layout_below="@+id/midUserMsg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chatContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bottomUserIcon"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:id="@+id/bottomUserName"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontBlack"
+                    android:textSize="14sp"
+                    android:text="User Name"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/bottomUserIcon" />
+
+                <TextView
+                    android:id="@+id/bottomUserReplyTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a3a3a3"
+                    android:layout_alignBottom="@+id/bottomUserName"
+                    android:layout_alignParentEnd="true"
+                    android:text="1h" />
+
+                <TextView
+                    android:id="@+id/bottomUserMsg"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:textColor="@color/fontBlack"
+                    android:layout_alignStart="@+id/bottomUserName"
+                    android:layout_below="@+id/bottomUserName"
+                    android:text="msg.\nsegweg\negewgewhewrhr" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"/>
+
+</LinearLayout>

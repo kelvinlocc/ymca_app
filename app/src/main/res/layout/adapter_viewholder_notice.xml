@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/notice_icon"
+            android:layout_marginRight="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:background="@drawable/background_circle"
+            android:src="@drawable/ic_notifications"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/notice_icon"
+            android:paddingBottom="2dp"
+            android:text="------"
+            android:textColor="@color/mainBlue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/notice_icon"
+            android:layout_below="@+id/title"
+            android:paddingBottom="8dp"
+            android:text="---"
+            android:textColor="#292929"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/notice_icon"
+            android:layout_below="@+id/content"
+            android:drawableLeft="@drawable/ic_unread"
+            android:paddingBottom="2dp"
+            android:text="未讀, 請按此確認"
+            android:textSize="16sp"
+            android:textColor="#FFA3A3A3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/postedTime"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/notice_icon"
+            android:layout_alignEnd="@id/newsContent"
+            android:textSize="16sp"
+            android:textColor="#FFA3A3A3"
+            android:text="---" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

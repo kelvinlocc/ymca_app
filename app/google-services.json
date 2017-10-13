@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "267851752133",
+    "firebase_url": "https://ywca-elderly-community.firebaseio.com",
+    "project_id": "ywca-elderly-community",
+    "storage_bucket": "ywca-elderly-community.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267851752133:android:40d47f0138fddd58",
+        "android_client_info": {
+          "package_name": "android.elderlycommunity.ywca.com.elderlycommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267851752133-5b6lqrupu1b3foijcrf5vccdti99f6i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.elderlycommunity.ywca.com.elderlycommunity",
+            "certificate_hash": "fb0a301208d56f226c70e415d9cecc23b759b0ee"
+          }
+        },
+        {
+          "client_id": "267851752133-vudn92eg5k3bfnlcjdv9m2c5l9kcjmii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92vjvRgVp3s2ua_COZF7z3ldeCFt8b88"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267851752133-vudn92eg5k3bfnlcjdv9m2c5l9kcjmii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

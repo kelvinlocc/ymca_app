@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.ProfileActivity.ProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:background="@color/mainBlue"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:text="帳號" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/userIcon"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/userId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="#414141"
+                        android:text="編號: MEM1234" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="#414141"
+                        android:text="姓名: Chan Siu Ming" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/mainBlue"
+                android:text="登記課程" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:minHeight="100dp"
+                android:id="@+id/recyclerView"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/attendanceBtnContainer"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e6e6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/mainBlue"
+                    android:textStyle="bold"
+                    android:text="出席紀錄"
+                    android:background="@drawable/background_rectangle_clickable"
+                    android:onClick="attendanceSheetClicked"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/mainBlue"
+                android:textStyle="bold"
+                android:text="月曆"
+                android:background="@drawable/background_rectangle_clickable"
+                android:onClick="toCalendarActivity"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/mainBlue"
+                android:textStyle="bold"
+                android:text="相集"
+                android:background="@drawable/background_rectangle_clickable"
+                android:onClick="toAlbumActivity"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <info.hoang8f.widget.FButton
+                android:onClick="Logout"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登出"
+                android:textColor="#ffffff"
+                fbutton:buttonColor="#ffd19d"
+                fbutton:shadowColor="#edc08d"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="0dp" />
+
+            <info.hoang8f.widget.FButton
+                android:visibility="gone"
+                android:onClick="ResetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:textColor="#ffffff"
+                fbutton:buttonColor="#ffd19d"
+                fbutton:shadowColor="#edc08d"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="0dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toMainActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toSharingActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/sharing" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/profile_orange" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toSupportActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/support" />
+
+    </LinearLayout>
+</LinearLayout>

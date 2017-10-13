@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.AlbumActivity.AlbumActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@color/mainBlue"
+        android:gravity="center"
+        android:text="相簿"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:background="@color/mainBlue"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="---"
+        android:id="@+id/banner" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gridView"
+            android:columnWidth="120dp"
+            android:numColumns="auto_fit" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:indeterminate="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>

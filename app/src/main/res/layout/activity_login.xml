@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.LoginActivity"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歡迎使用YWCA應用程式"
+                android:textColor="@color/mainBlue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="請使用會員證上的資料登入"
+                android:textColor="@color/mainBlue"
+                android:textSize="14sp"  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="編號"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="20sp"  />
+
+                <EditText
+                    android:id="@+id/inputId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="輸入編號"
+                    android:textColorHint="#57707070"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="密碼"
+                    android:textColor="@color/mainBlue"
+                    android:textSize="20sp"  />
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="輸入密碼"
+                    android:textColorHint="#57707070"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <TextView
+                android:onClick="showLoginGuide"
+                android:background="@drawable/background_rectangle_clickable"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/mainBlue"
+                android:textSize="16sp"
+                android:text="如何登入 "
+                android:drawableRight="@drawable/help_circle"/>
+
+            <info.hoang8f.widget.FButton
+                android:onClick="Login"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="登入"
+                android:textColor="#ffffff"
+                fbutton:buttonColor="@color/mainBlue"
+                fbutton:shadowColor="@color/mainBlueDark"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

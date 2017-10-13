@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.elderlycommunity.ywca.com.elderlycommunity.ClassListActivity.ClassListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/mainBlue">
+        <ImageView
+            android:id="@+id/home"
+            style="@style/ClickableImageView"
+            android:onClick="showMyCourses"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:padding="2dp"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_toggle_courses" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#fff"
+            android:text="所有課程" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toMainActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/sharing_orange" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toProfileActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_rectangle_clickable"
+            android:onClick="toSupportActivity"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/support" />
+    </LinearLayout>
+</LinearLayout>
